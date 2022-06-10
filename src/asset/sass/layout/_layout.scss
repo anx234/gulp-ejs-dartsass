@@ -1,0 +1,45 @@
+@use "./../foundation/system" as *;
+
+/* Header
+   ========================================================================== */
+   .ly_header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  
+    &_inner {
+        @include contentCentering();
+    }
+  
+    a:link {
+      color: $txtColor;
+    }
+  }
+  
+  /* Body
+     ========================================================================== */
+  .ly_inner {
+    @include contentCentering();
+  }
+  
+  /* Footer
+     ========================================================================== */
+  
+  .ly_footer {
+  
+    &_inner {
+      @include contentCentering();
+    }
+  
+    a:link {
+      color: $txtColor;
+    }
+  }
+  
+  /* Others
+     ========================================================================== */
+  
+
+  
