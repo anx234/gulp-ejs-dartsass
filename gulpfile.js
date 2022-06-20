@@ -15,7 +15,8 @@ const purgecss = require("gulp-purgecss");
 const cleancss = require("gulp-clean-css");
 // js 縮小化
 const uglify = require("gulp-uglify");
-
+// img 縮小化
+const imagemin = require("gulp-imagemin");
 // エラーが発生しても強制終了させない
 const plumber = require("gulp-plumber");
 // エラー発生時のアラート出力
@@ -98,7 +99,28 @@ const js = () => {
         .pipe(browserSync.stream());
 };
 
-
+/**
+ * img
+ */
+ const img = () => {
+    return gulp
+        .src(srcPath.img)
+        .pipe(
+            //エラーが出ても処理を止めない
+            plumber({
+                errorHandler: notify.onError("Error:<%= error.message %>"),
+            })
+        )
+        .pipe(
+            imagemin([
+                imagemin.svgo(),
+                imagemin.optipng(),
+                imagemin.gifsicle({ optimizationLevel: 3 }),
+            ])
+        )
+        .pipe(gulp.dest(docsPath.img))
+        .pipe(browserSync.stream());
+};
 
 /**
  * html
@@ -157,6 +179,6 @@ const watchFiles = () => {
  * parallelは並列で実行
  */
 exports.default = gulp.series(
-    gulp.parallel(html, ejsHtml, js, cssSass),
+    gulp.parallel(html, ejsHtml,img, js, cssSass),
     gulp.parallel(watchFiles, browserSyncFunc)
 );
