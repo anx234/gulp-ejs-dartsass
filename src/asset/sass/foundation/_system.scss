@@ -144,3 +144,8 @@ $breakpoints: (
     $fzValue: (math.div($fz, (floor($fz) * 2) % 2 + 1)) * 10;
     @return $num - (math.div($lh * $fzValue - $fzValue, 2)) + px;
   }
+
+  @function autoEm($numerator, $denominator) {
+
+    @return math.div($numerator , $denominator) * 1em;
+  }
