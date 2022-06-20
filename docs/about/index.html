@@ -29,84 +29,171 @@
         <link rel="stylesheet" href="./../asset/css/style.css" />
     </head>
     <body>
-        <!-- .c-loading -->
-        <article class="c-loading" id="js-loading">
-            <div class="c-loading__spinner"></div>
-        </article>
-        <!-- /.c-loading -->
-
-        <!-- .l-header -->
-        <header class="l-header" id="js-header">
-            <div class="l-header__inner">
-                <a class="l-header__logo" href="/">logo</a>
-                <nav class="l-header__nav">
-                    <a href="#contact" class="l-header__navCta">contact</a>
-                    <input
-                        type="checkbox"
-                        class="js-navToggle"
-                        id="l-header__navToggle"
-                    />
-                    <label
-                        for="l-header__navToggle"
-                        class="l-header__navHamburger"
-                    >
-                        <span></span>
-                    </label>
-                    <label
-                        for="l-header__navToggle"
-                        class="l-header__navClose"
-                    ></label>
-                    <ul class="l-header__navLists js-navLists">
-                        <li><a href="/about">about</a></li>
-                        <li><a href="#work">work</a></li>
-                        <li><a href="#service">service</a></li>
-                        <li><a href="#profile">profile</a></li>
+        <header class="ly_header">
+            <div class="ly_header_inner">
+                <div class="bl_headerUtils">
+                    <a class="bl_headerUtils_logo" href="#"
+                        ><img src="/assets/img/logo.svg" alt=""
+                    /></a>
+                    <a class="el_btn" href="#">お問い合わせ</a>
+                </div>
+                <!-- /.bl_headerUtils -->
+                <nav>
+                    <ul class="bl_headerNav">
+                        <li class="bl_headerNav_item">
+                            <a class="bl_headerNav_link" href="#"
+                                >私たちの特徴</a
+                            >
+                        </li>
+                        <li class="bl_headerNav_item">
+                            <a class="bl_headerNav_link" href="#">サービス</a>
+                        </li>
+                        <li class="bl_headerNav_item">
+                            <a class="bl_headerNav_link" href="#">制作実績</a>
+                        </li>
+                        <li class="bl_headerNav_item">
+                            <a class="bl_headerNav_link" href="#">会社情報</a>
+                        </li>
+                        <li class="bl_headerNav_item">
+                            <a class="bl_headerNav_link" href="#">採用情報</a>
+                        </li>
+                        <li class="bl_headerNav_item">
+                            <a class="bl_headerNav_link" href="#">ブログ</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
+            <!-- /.ly_header_inner -->
         </header>
-        <!-- /.l-header -->
 
         <!-- main -->
-        <main>
-            <!-- .p-about -->
-            <section id="about" class="p-about c-section">
-                <div class="c-section__inner">
-                    <h2 class="c-section__title">タイトルテキスト</h2>
-                    <p class="c-section__lead">aboutページです。</p>
-                </div>
-            </section>
-            <!-- /.p-about -->
-        </main>
+        <main></main>
         <!-- /main -->
 
-        <!-- .l-footer -->
-        <footer class="l-footer">
-            <div class="l-footer__inner">
-                <nav class="l-footer__nav">
-                    <h4 class="l-footer__subtitle">Links</h4>
-                    <ul class="l-footer__lists">
-                        <li><a href="">リンク</a></li>
-                        <li><a href="">リンク</a></li>
-                        <li><a href="">リンク</a></li>
-                    </ul>
-                </nav>
-                <nav class="l-footer__nav">
-                    <h4 class="l-footer__subtitle">About</h4>
-                    <ul class="l-footer__lists">
-                        <li><a href="">お問い合わせ</a></li>
-                        <li><a href="">運営会社</a></li>
-                        <li><a href="">プライバシーポリシー</a></li>
-                        <li><a href="">利用規約</a></li>
-                    </ul>
-                </nav>
-                <small class="l-footer__copy"
-                    >&copy;&nbsp;2022&nbsp;traveler20.</small
-                >
+        <footer>
+            <div class="ly_footer">
+                <div class="ly_footer_inner">
+                    <nav>
+                        <ul class="bl_footerNav">
+                            <li class="bl_footerNav_item">
+                                <a class="bl_footerNav_link" href="#"
+                                    >私たちの特徴</a
+                                >
+                                <ul class="bl_footerChildNav">
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >私たちの強み</a
+                                        >
+                                    </li>
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >私たちのポリシー</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bl_footerNav_item">
+                                <a class="bl_footerNav_link" href="#"
+                                    >サービス</a
+                                >
+                                <ul class="bl_footerChildNav">
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >webサイト構築</a
+                                        >
+                                    </li>
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >webサイト改善</a
+                                        >
+                                    </li>
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >解析・レポーティング</a
+                                        >
+                                    </li>
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >多言語webサイト構築</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bl_footerNav_item">
+                                <a class="bl_footerNav_link" href="#"
+                                    >制作実績</a
+                                >
+                            </li>
+                            <li class="bl_footerNav_item">
+                                <a class="bl_footerNav_link" href="#"
+                                    >会社情報</a
+                                >
+                                <ul class="bl_footerChildNav">
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >メッセージ</a
+                                        >
+                                    </li>
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >会社概要</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bl_footerNav_item">
+                                <a class="bl_footerNav_link" href="#"
+                                    >採用情報</a
+                                >
+                                <ul class="bl_footerChildNav">
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >新卒採用</a
+                                        >
+                                    </li>
+                                    <li class="bl_footerChildNav_item">
+                                        <a
+                                            class="bl_footerChildNav_link"
+                                            href="#"
+                                            >中途採用</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bl_footerNav_item">
+                                <a class="bl_footerNav_link" href="#">ブログ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.ly_footer_inner -->
             </div>
+            <!-- /.ly_footer -->
+            <div class="ly_footer hp_btGray">
+                <div class="ly_footer_inner">
+                    <small class="el_footerCopyright">© 2019 Triad Inc.</small>
+                </div>
+                <!-- /.ly_footer_inner -->
+            </div>
+            <!-- /.ly_footer hp_btGray -->
         </footer>
-        <!-- /.l-footer -->
-
-        <script src="./../asset/js/script.js"></script>
     </body>
 </html>
