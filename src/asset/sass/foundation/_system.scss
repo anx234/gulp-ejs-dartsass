@@ -149,3 +149,24 @@ $breakpoints: (
 
     @return math.div($numerator , $denominator) * 1em;
   }
+/*
+  @function autoSpace2($num:0, $fz:$fz, $fz2:$fz, $lh:$lh, $lh2:$lh){
+    $fzValue: (math.div($fz2, (floor($fz2) * 2) % 2 + 1)) * 10;
+    $autoSpaceValue: $num - (math.div($lh * $fzValue - $fzValue, 2));
+  
+    $fz2Value: (math.div($fz2, (floor($fz2) * 2) % 2 + 1)) * 10;
+    $nextHalfLineHeight: math.div(($fz2Value * $lh2) - $fz2Value, 2);
+  
+    @return $autoSpaceValue - $nextHalfLineHeight + px;
+  }
+  
+  @function sp_autoSpace2($num:0, $fz:$sp_fz, $fz2:$sp_fz, $lh:$sp_lh, $lh2:$sp_lh){
+    $fzValue: (math.div($fz2, (floor($fz2) * 2) % 2 + 1)) * 10;
+    $autoSpaceValue: $num - (math.div($lh * $fzValue - $fzValue, 2));
+  
+    $fz2Value: (math.div($fz2, (floor($fz2) * 2) % 2 + 1)) * 10;
+    $nextHalfLineHeight: (($fz2Value * $lh2) - $fz2Value) / 2;
+  
+    @return $autoSpaceValue - $nextHalfLineHeight + px;
+  }
+  */
