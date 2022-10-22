@@ -127,15 +127,3 @@ autoSpaceの$fz・$lhのデフォルト値にspのデフォルト値を渡した
   }
 ```
 
-### autoEm
-em計算に使用します
-```scss
-.hoge{
-  margin-bottom: autoEm(20,10);
-}
-```
-```scss
-@function func-em($numerator, $denominator) {
-	@return $numerator / $denominator * 1em;
-}
-```
